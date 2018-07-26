@@ -9,9 +9,10 @@
 <title>Insert title here</title>
 <meta http-equiv="pragma" content="no-cache">
 <meta http-equiv="cache-control" content="no-cache">
-<meta http-equiv="expires" content="0">  
+<meta http-equiv="expires" content="0">
+
 </head>
-<body>
+<body style="background-color: white ">
 <h1 align="center">商品列表</h1>
 	<table align="center" border="1" width="88%" cellpadding="0" cellspacing="0" >
 		<tr>
@@ -24,8 +25,8 @@
 			<th>商品库存</th>
 			<th>商品操作</th>
 		</tr>
-		<c:forEach items="${pageModel.data}" var="product" varStatus="vs">
-			<tr  bgcolor="${vs.index%2==0?'#CCCCCC':'#6081A3'}">
+		<c:forEach items="${pageModel.data}" var="product" >
+			<tr >
 				<td>${product.id}</td>
 				<td>${product.name}</td>
 				<td>${product.desc}</td>

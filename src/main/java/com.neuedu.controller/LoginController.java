@@ -54,7 +54,7 @@ public class LoginController extends HttpServlet{
 			HttpSession session=request.getSession();
 			session.setAttribute("token", token);
 			session.setAttribute("acc", acc);
-			request.getRequestDispatcher("view/home.jsp").forward(request, response);
+			request.getRequestDispatcher("view/houtai.html").forward(request, response);
 		
 		}else {
 			//µÇÂ½Ê§°Ü

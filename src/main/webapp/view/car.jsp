@@ -15,9 +15,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
 <meta http-equiv="description" content="This is my page">
 </head>
-<body>
+<body style="background-color: white">
 <h1 align="center">您的商品如下：</h1>
-	<table align="center" border="1" cellspacing="0">
+	<table align="center" border="1" cellpadding="0" cellspacing="0">
   <tr bgcolor="pink">
   <td>商品编号</td>
   <td>商品名称</td>

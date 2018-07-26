@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 </head>
-<body>
+<body style="background-color: white">
 	<h1 align="center">商品列表</h1>
 	<table align="center" border="1" cellpadding="0" cellspacing="0" width="88%">
 		<tr>
@@ -22,8 +22,8 @@
 		
 		</tr>
 		
-		<c:forEach items="${pageMo.data }" var="product" varStatus="vs" >
-			<tr bgcolor="${vs.index%2==0?'#CCCCCC':'#6081A3'}">
+		<c:forEach items="${pageMo.data }" var="product" >
+			<tr>
 				<td>${product.id }</td>
 				<td>${product.name }</td>
 				<td>${product.price }</td>
@@ -36,9 +36,7 @@
 			</tr>
 			
 		</c:forEach>
-		
-		
-			
+
 	</table>
 	<p style="text-align: center">
 	<c:forEach begin="1" end="${pageMo.totalPage}" step="1" var="current">

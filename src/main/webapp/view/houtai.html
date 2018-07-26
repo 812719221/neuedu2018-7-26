@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>后台界面</title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/houtai.css" />
+	</head>
+
+	<body>
+		
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+					<a class="navbar-brand" href="#"><span class="glyphicon glyphicon-home"></span></a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="#"><span class="logo1">全球<span class="glyphicon glyphicon-globe"></span>代购</span> 管理控制台 <span class="sr-only">(current)</span></a>
+						</li>
+						<li>
+							<a href="#"></a>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-link"></span>&nbsp;产品与服务<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li>
+									&nbsp;&nbsp;弹性计算
+								</li>
+								 <li role="separator" class="divider"></li>
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-road"></span>&nbsp;云服务计算ECS</a>
+								</li>
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-signal"></span>&nbsp;云服务计算ECS</a>
+								</li>
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-paperclip"></span>&nbsp;云服务计算ECS</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<form class="navbar-form navbar-left">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="请输入内容">
+						</div>
+						<button type="submit" class="btn btn-default">搜索</button>
+					</form>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="#"><span class="glyphicon glyphicon-envelope"></span>&nbsp;消息</a>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span>&nbsp;账户 Administrator <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-off"></span>&nbsp;退出登录</a>
+								</li>
+
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-heart"></span>&nbsp;换肤<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-king"></span>&nbsp;蓝色</a>
+								</li>
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-pawn"></span>&nbsp;红色</a>
+								</li>
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-knight"></span>&nbsp;灰色</a>
+								</li>
+
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+		
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-2 col-sm-3 col-xs-5 ">
+			        <ul class="list-group">
+                        <li class="list-group-item"><a href="view/main.html" target="iframe1"><span class="glyphicon glyphicon-blackboard"></span>&nbsp;&nbsp;工作台</a></li>
+                        <div id="open">
+                            <li class="list-group-item"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;用户管理&nbsp;<span class="glyphicon glyphicon-chevron-down"></span></li>
+                        </div>
+                        <div id="one">
+                        	
+                            <li class="list-group-item leftanniu"><a href="huiyuan.html" target="iframe1" style="text-decoration: none;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;会员管理</a></li>
+                            <li class="list-group-item leftanniu"><a href="#" style="text-decoration: none;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;账号管理</a></li>
+                            <li class="list-group-item leftanniu"><a href="#" style="text-decoration: none;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;消息管理</a></li>
+                        </div>
+                        <div id="open2">
+                        <li class="list-group-item"><span class="glyphicon glyphicon-refresh"></span>&nbsp;&nbsp;商品管理&nbsp;<span class="glyphicon glyphicon-chevron-down"></span></li>
+                        </div>
+                        <div id="three">
+                        	<li class="list-group-item leftanniu" ><a href="view/addproduct.jsp" target="iframe1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;添加商品</a></li>
+                            <li class="list-group-item leftanniu"><a href="view/product?operation=2&pageNo=1&pageSize=4" target="iframe1" style="text-decoration: none;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;商品管理</a></li>
+							<li class="list-group-item leftanniu"><a href="view/addcategory.jsp" target="iframe1" style="text-decoration: none;" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;添加类别</a></li>
+							<li class="list-group-item leftanniu"><a href="view/category?operation=2&pageNo=1&pageSize=4" target="iframe1" style="text-decoration: none;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;类别管理</a></li>
+                        </div>
+                        <div id="open1">
+                            <li class="list-group-item"><span class="glyphicon glyphicon-signal"></span>&nbsp;&nbsp;数据中心&nbsp;<span class="glyphicon glyphicon-chevron-down"></span></li>
+                        </div>
+                        <div id="two">
+                        	<li class="list-group-item leftanniu"><a href="#" style="text-decoration: none;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;流量统计</a></li>
+                            <li class="list-group-item leftanniu"><a href="#" style="text-decoration: none;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;来源分析</a></li>
+                            <li class="list-group-item leftanniu"><a href="#" style="text-decoration: none;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;受访分析</a></li>
+                        </div>
+                        <div id="open3">
+                            <li class="list-group-item"><span class="glyphicon glyphicon-th-list"></span>&nbsp;&nbsp;界面设置&nbsp;<span class="glyphicon glyphicon-chevron-down"></span></li>
+                        </div>
+                        <div id="four">
+                        	<li class="list-group-item leftanniu"><a href="#" style="text-decoration: none;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;主页管理</a></li>
+                            <li class="list-group-item leftanniu"><a href="#" style="text-decoration: none;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;商品排布</a></li>
+                            <li class="list-group-item leftanniu"><a href="#" style="text-decoration: none;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;栏目文章</a></li>
+                        </div>
+                        <div id="open4">
+                            <li class="list-group-item"><span class="glyphicon glyphicon-briefcase"></span>&nbsp;&nbsp;辅助工具&nbsp;<span class="glyphicon glyphicon-chevron-down"></span></li>
+                        </div>
+                        <div id="five">
+                        	<li class="list-group-item leftanniu"><a href="#" style="text-decoration: none;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;支付设置</a></li>
+                            <li class="list-group-item leftanniu"><a href="#" style="text-decoration: none;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第三方登陆设置</a></li>
+                            <li class="list-group-item leftanniu"><a href="#" style="text-decoration: none;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;配送方式</a></li>
+                        </div>
+                        
+                        
+                        
+                        
+                        
+			        </ul>
+                    
+			    </div>
+			
+		        <div class="col-md-10 col-sm-9 col-xs-7 left">
+		            <div id="main">
+			        <iframe name="iframe1" frameborder="0"  width="100%" height="570" src="view/main.html" <!--scrolling="no"-->></iframe>
+		            </div>
+		        </div>
+		</div>
+		</div>
+        
+		<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+	</body>
+    <script>
+		var open=document.querySelector("#open");
+		var flag=true;
+		open.onclick=function(){
+			var open=document.querySelector("#one");
+			if(flag){
+				open.style.display="block"
+				flag=false;
+			}else{
+			open.style.display="none";
+			flag=true;
+		    }
+		}
+	</script>
+	<script>
+		var open=document.querySelector("#open1");
+		var flag=true;
+		open.onclick=function(){
+			var open=document.querySelector("#two");
+			if(flag){
+				open.style.display="block"
+				flag=false;
+			}else{
+			open.style.display="none";
+			flag=true;
+		    }
+		}
+	</script>
+	<script>
+		var open=document.querySelector("#open2");
+		var flag=true;
+		open.onclick=function(){
+			var open=document.querySelector("#three");
+			if(flag){
+				open.style.display="block"
+				flag=false;
+			}else{
+			open.style.display="none";
+			flag=true;
+		    }
+		}
+	</script>
+	<script>
+		var open=document.querySelector("#open3");
+		var flag=true;
+		open.onclick=function(){
+			var open=document.querySelector("#four");
+			if(flag){
+				open.style.display="block"
+				flag=false;
+			}else{
+			open.style.display="none";
+			flag=true;
+		    }
+		}
+	</script>
+	<script>
+		var open=document.querySelector("#open4");
+		var flag=true;
+		open.onclick=function(){
+			var open=document.querySelector("#five");
+			if(flag){
+				open.style.display="block"
+				flag=false;
+			}else{
+			open.style.display="none";
+			flag=true;
+		    }
+		}
+	</script>
+</html>

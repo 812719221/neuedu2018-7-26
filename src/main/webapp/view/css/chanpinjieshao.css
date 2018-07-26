@@ -1,0 +1,143 @@
+body{
+	background-color: #171C44;
+	margin-left: 5%;
+}
+.logo{
+	font-family: "微软雅黑";
+	font-size: 30px;
+	color: red;
+}
+#top{
+	margin-top: 20px;
+}
+#dibu{
+	
+	text-align: center;
+	margin-top: 15px;
+}
+.foot1{
+	padding-top: 15px;
+	color: white;
+	font-size: 20px;
+}
+.foot2{
+	color: white;
+	font-size: 12px;
+}
+#rightBox1 {
+	position: fixed;
+	top: 216px;
+	right: 10px;
+	background-color: #FF7800;
+	float: right;
+	color: white;
+	font-size: 25px;
+	padding-left: 7px;
+	padding-top: 5px;
+	padding-right: 7px;
+	border-radius: 10px;
+}
+#rightBox2 {
+	position: fixed;
+	top: 266px;
+	right: 10px;
+	background-color: #FF7800;
+	float: right;
+	color: white;
+	font-size: 25px;
+	padding-left: 7px;
+	padding-top: 5px;
+	padding-right: 7px;
+	border-radius: 10px;
+}
+#rightBox3 {
+	position: fixed;
+	top: 316px;
+	right: 10px;
+	background-color: #FF7800;
+	float: right;
+	color: white;
+	font-size: 25px;
+	padding-left: 7px;
+	padding-top: 5px;
+	padding-right: 7px;
+	border-radius: 10px;
+}
+#rightBox4 {
+	position: fixed;
+	top: 366px;
+	right: 10px;
+	background-color: #FF7800;
+	float: right;
+	color: white;
+	font-size: 25px;
+	padding-left: 7px;
+	padding-top: 5px;
+	padding-right: 7px;
+	border-radius: 10px;
+}
+#rightBox5 {
+	position: fixed;
+	top: 416px;
+	right: 10px;
+	background-color: #FF7800;
+	float: right;
+	color: white;
+	font-size: 25px;
+	padding-left: 7px;
+	padding-top: 5px;
+	padding-right: 7px;
+	border-radius: 10px;
+}
+.daohang{
+	color: white;
+}
+.anniu1{
+	color: black;
+}
+#jieshao{
+	background-color: white;
+	padding-top: 15px;
+	padding-left: 15px;
+	margin-bottom: 15px;
+}
+.wenzi1{
+	color: #999999;
+}
+.wenzi2{
+	font-weight: bold;
+	font-size: 19px;
+}
+.wenzi3{
+	font-size: 25px;
+	font-weight: bold;
+	color: #E31436;
+}
+#shoujia{
+	background-color: #F9F9F9;
+}
+.bayou{
+	height: 10px;
+	
+}
+.baoyou em{
+	background-color:#E31436;
+	color: hotpink;
+	font-style: initial;
+	color: white;
+	
+}
+.anniu2{
+	font-size: 20px;
+	background-color:#E31436 ;
+	color: white;
+	margin-bottom: 15px;
+}
+#xiaxiaxia{
+	
+	margin-top: 13px;
+}
+.white a{
+	color: white;
+}
+

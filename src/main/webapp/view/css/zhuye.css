@@ -1,0 +1,132 @@
+body{
+	background-color: #171C44;
+	margin-left: 4%;
+}
+.logo{
+	font-family: "微软雅黑";
+	font-size: 35px;
+	color: red;
+}
+.jumbotron{
+	background-color: #F7242D !important;
+}
+#top{
+	margin-top: 20px;
+}
+.hengfu{
+	text-align: center;
+	color: white;
+	font-size: 30px;
+	background-color: #AA242E;
+	padding-top: 12px;
+	padding-bottom: 11px;
+	margin-top: 12px;
+}
+.pic{
+	background-color: white;
+	margin-top: 15px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+}
+.text1{
+	font-weight: bold;
+}
+.text2{
+	color: #D31C43;
+}
+.text3{
+	color: red;
+
+}
+.text4{
+	background-color:#D31C43;
+	color: white;
+	float: right;
+	margin-top: -6px;
+}
+#dibu{
+	text-align: center;
+	margin-top: 15px;
+}
+.foot1{
+	padding-top: 15px;
+	color: white;
+	font-size: 20px;
+}
+.foot2{
+	color: white;
+	font-size: 12px;
+}
+
+#rightBox1 {
+	position: fixed;
+	top: 216px;
+	right: 10px;
+	background-color: #FF7800;
+	float: right;
+	color: white;
+	font-size: 25px;
+	padding-left: 7px;
+	padding-top: 5px;
+	padding-right: 7px;
+	border-radius: 10px;
+}
+#rightBox2 {
+	position: fixed;
+	top: 266px;
+	right: 10px;
+	background-color: #FF7800;
+	float: right;
+	color: white;
+	font-size: 25px;
+	padding-left: 7px;
+	padding-top: 5px;
+	padding-right: 7px;
+	border-radius: 10px;
+}
+#rightBox3 {
+	position: fixed;
+	top: 316px;
+	right: 10px;
+	background-color: #FF7800;
+	float: right;
+	color: white;
+	font-size: 25px;
+	padding-left: 7px;
+	padding-top: 5px;
+	padding-right: 7px;
+	border-radius: 10px;
+}
+#rightBox4 {
+	position: fixed;
+	top: 366px;
+	right: 10px;
+	background-color: #FF7800;
+	float: right;
+	color: white;
+	font-size: 25px;
+	padding-left: 7px;
+	padding-top: 5px;
+	padding-right: 7px;
+	border-radius: 10px;
+}
+#rightBox5 {
+	position: fixed;
+	top: 416px;
+	right: 10px;
+	background-color: #FF7800;
+	float: right;
+	color: white;
+	font-size: 25px;
+	padding-left: 7px;
+	padding-top: 5px;
+	padding-right: 7px;
+	border-radius: 10px;
+}
+.white a{
+	color: white;
+}
+.navbar-default .navbar-nav > li > a:hover{
+	background-color: #E7E7E7;
+}

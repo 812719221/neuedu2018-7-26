@@ -11,10 +11,14 @@
 	<!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
-
+	<style>
+		body{
+			background-color: white;
+		}
+	</style>
   </head>
   
-  <body style="text-align: center;">
+  <body style="text-align: center;" >
   	<br/>
     	<h1>您购买的商品如下</h1>
     	<c:if test="${empty sessionScope.cart.items}">
@@ -30,8 +34,8 @@
     				<th>小计</th>
     				<th>操作</th>
     			</tr>
-    			<c:forEach items="${sessionScope.cart.items}" var="me" varStatus="vs">
-    				<tr bgcolor="${vs.index%2==0?'#CCCCCC':'#6081A3'}">
+    			<c:forEach items="${sessionScope.cart.items}" var="me" >
+    				<tr >
 	    				<td>${me.value.product.id}</td>
 	    				<td>${me.value.product.name}</td>
 	    				<td>${me.value.product.price}</td>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<script src="js/echarts.min.js"></script>
+	</head>
+	<body>
+		<span class="maintext1">欢迎使用</span>
+		<span class="maintext2" id="donghua">全球<span class="glyphicon glyphicon-globe"></span>代购</span>
+		<span class="maintext1">后台管理系统</span>
+		
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-3 col-sm-3 col-xs-6">
+					<div class="mainbox">
+						<div class="mainbox1" id="bgc1"><span class="mainbox1text1"><span class="glyphicon glyphicon-calendar"></span></span><br />内容发布数</div>
+					    <div class="mainbox2">今日（5）<br /><br /><span class="mainbox2text1">累计159 </span></div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-3 col-xs-6">
+					<div class="mainbox">
+						<div class="mainbox1" id="bgc2"><span class="mainbox1text1"><span class="glyphicon glyphicon-comment"></span></span><br />评论数</div>
+					    <div class="mainbox2">今日（50）<br /><br /><span class="mainbox2text1">累计3505 </span></div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-3 col-xs-6">
+					<div class="mainbox">
+						<div class="mainbox1" id="bgc3"><span class="mainbox1text1"><span class="glyphicon glyphicon-list-alt"></span></span><br />留言数</div>
+					    <div class="mainbox2">今日（15）<br /><br /><span class="mainbox2text1">累计1250 </span></div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-3 col-xs-6">
+					<div class="mainbox">
+						<div class="mainbox1" id="bgc4"><span class="mainbox1text1"><span class="glyphicon glyphicon-user"></span></span><br />会员注册数</div>
+					    <div class="mainbox2">今日（0）<br /><br /><span class="mainbox2text1">累计5 </span></div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+			    <div class="col-md-6 col-sm-12 col-xs-12">
+			        <div id="tubiao">
+				
+				        <div id="main" style="width: 100%;height:400px;"></div>
+                            <script type="text/javascript">
+                        var myChart = echarts.init(document.getElementById('main'));
+
+        
+        option = {
+    backgroundColor: '#FFFFFF',
+
+    title: {
+        text: '来源分析图',
+        left: 'center',
+        top: 20,
+        textStyle: {
+            color: '#272822'
+        }
+    },
+
+    tooltip : {
+        trigger: 'item',
+        formatter: "{a} <br/>{b} : {c} ({d}%)"
+    },
+
+    visualMap: {
+        show: false,
+        min: 80,
+        max: 600,
+        inRange: {
+            colorLightness: [0, 1]
+        }
+    },
+    series : [
+        {
+            name:'访问来源',
+            type:'pie',
+            radius : '55%',
+            center: ['50%', '50%'],
+            data:[
+                {value:335, name:'直接访问'},
+                {value:310, name:'外部链接'},
+                {value:274, name:'联盟广告'},
+                {value:235, name:'视频广告'},
+                {value:400, name:'搜索引擎'}
+            ].sort(function (a, b) { return a.value - b.value; }),
+            roseType: 'radius',
+            label: {
+                normal: {
+                    textStyle: {
+                        color: '#272822'
+                    }
+                }
+            },
+            labelLine: {
+                normal: {
+                    lineStyle: {
+                        color: '#272822'
+                    },
+                    smooth: 0.2,
+                    length: 10,
+                    length2: 20
+                }
+            },
+            itemStyle: {
+                normal: {
+                    color: '#c23531',
+                    shadowBlur: 200,
+                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+                }
+            },
+
+            animationType: 'scale',
+            animationEasing: 'elasticOut',
+            animationDelay: function (idx) {
+                return Math.random() * 200;
+            }
+        }
+    ]
+};
+
+        
+                          myChart.setOption(option);
+                         </script>
+			        </div>
+			    </div>
+			    <div class="col-md-6 col-sm-12 col-xs-12">
+			        <div id="tubiao2">
+			            <img width="514px" height="400px" src="img/趋势分析图.png" />
+			        </div>	
+			    </div>
+			</div>
+			
+			<div class="row">
+			    <div class="col-md-6 col-sm-6 col-xs-12">
+			    	<div id="dcl">
+			    	<div class="row">
+			    		<div class="col-md-12 col-sm-12 col-xs-12 " id="dcl2"><span class="dtext1">&nbsp;&nbsp;&nbsp;&nbsp;待处理</span><hr></div>
+			    	    <div class="col-md-1 col-sm-1 col-xs-1"></div>
+			    	    <div class="col-md-2 col-sm-2 col-xs-2 dcl1"><span class="dtext3"><a href="#" style="text-decoration: none;"><span class="glyphicon glyphicon-log-out"></span></span><br/><span class="dtext2">待发货</span> <br><span class="dtext1"> 500</span></a></div>
+			    	    <div class="col-md-2 col-sm-2 col-xs-2 dcl1"><span class="dtext3"><a href="#" style="text-decoration: none;"><span class="glyphicon glyphicon-yen"></span></span><br /><span class="dtext2">待付款</span><br><span class="dtext1"> 50</span></a></div>
+			    	    <div class="col-md-2 col-sm-2 col-xs-2 dcl1"><span class="dtext3"><a href="#" style="text-decoration: none;"><span class="glyphicon glyphicon-refresh"></span></span><br /> <span class="dtext2">退货退款</span><br><span class="dtext1">25</span></a></div>
+			    	    <div class="col-md-2 col-sm-2 col-xs-2 dcl1"><span class="dtext3"><a href="#" style="text-decoration: none;"><span class="glyphicon glyphicon-alert"></span></span><br /><span class="dtext2">库存预警</span><br><span class="dtext1"> 15</span></a></div>
+			    	    <div class="col-md-2 col-sm-2 col-xs-2 dcl1"><span class="dtext3"><a href="#" style="text-decoration: none;"><span class="glyphicon glyphicon-duplicate"></span></span><br /><span class="dtext2">买家咨询</span><br><span class="dtext1">300</span></a></div>
+			    	</div>
+			    	</div>
+			    </div>
+			    <div class="col-md-6 col-sm-6 col-xs-12">
+			    	<div id="rxsp">
+			    	<div class="row">
+			        <div class="col-md-12 col-sm-12 col-xs-12 " id="dcl3"><span class="dtext1">&nbsp;&nbsp;&nbsp;&nbsp;热销商品</span><hr></div>
+			        <div class="col-md-3 col-sm-3 col-xs-3 dcl1" >商品名称</div>
+			        <div class="col-md-3 col-sm-3 col-xs-3 dcl1" ></div>
+			        <div class="col-md-3 col-sm-3 col-xs-3 dcl1" >商品分类</div>
+			        <div class="col-md-3 col-sm-3 col-xs-3 dcl1" >销售量</div>
+			        </div>
+			        </div>
+			    </div>
+			    </div>	
+			    	
+			    	
+			    	
+		</div>	    	
+			    	
+			    	
+			    	
+		</div>
+		<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+	</body>
+</html>

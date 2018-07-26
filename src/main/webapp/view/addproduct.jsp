@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 </head>
-<body>
+<body style="background-color: white">
 	<form action="product" method="post">
 	<input type="hidden" name="operation" value="1"/>
 	<table align="center">

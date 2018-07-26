@@ -1,0 +1,35 @@
+body{
+	background-color: #171C44;
+}
+.logo1{
+	font-family: "微软雅黑";
+
+	color: red;
+}
+.dropdown-menu{
+	text-align: center;
+}
+#one{
+	display: none;
+}
+#two{
+	display: none;
+}
+#three{
+	display: none;
+}
+#four{
+	display: none;
+}
+#five{
+	display: none;
+}
+a:hover{
+	text-decoration: none;
+}
+.leftanniu{
+	background-color: #E6E6E6;
+}
+#three a{
+	text-decoration: none;
+}

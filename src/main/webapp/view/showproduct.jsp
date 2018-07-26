@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 </head>
-<body>
+<body style="background-color: white">
 	<h1 align="center">商品列表</h1>
 	<table align="center" border="1" cellpadding="0" cellspacing="0">
 		<tr>
