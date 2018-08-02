@@ -37,5 +37,5 @@ public interface ProductDao {
 	public PageModel<Product> findEmpByPage(int pageNo, int pageSize);
 	public PageMo<Product> findProductByPage(int pageNo, int pageSize);
 	
-	
+
 }

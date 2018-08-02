@@ -6,9 +6,14 @@ import java.util.List;
 import com.neuedu.dao.CartDao;
 import com.neuedu.dao.OrderDao;
 import com.neuedu.dao.OrderItemDao;
+import com.neuedu.dao.ProductDao;
 import com.neuedu.dao.impl.jdbc.CartDaoImpl;
 import com.neuedu.dao.impl.jdbc.OrderDaoImpl;
 import com.neuedu.dao.impl.jdbc.OrderItemDaoImpl;
+import com.neuedu.dao.impl.mybatis.CartDaoMybatisImpl;
+import com.neuedu.dao.impl.mybatis.OrderItemMybatisImpl;
+import com.neuedu.dao.impl.mybatis.OrderMybatisImpl;
+import com.neuedu.dao.impl.mybatis.ProductMybatisImpl;
 import com.neuedu.entity.Cart;
 import com.neuedu.entity.Product;
 import com.neuedu.entity.UserOrder;
@@ -18,9 +23,10 @@ import com.neuedu.utils.Utils;
 
 public class OrderServiceImpl implements OrderService {
 
-	CartDao cartDao=new CartDaoImpl();
-	OrderDao orderDao=new OrderDaoImpl();
-	OrderItemDao orderItemDao=new OrderItemDaoImpl();
+	CartDao cartDao=new CartDaoMybatisImpl();
+	OrderDao orderDao=new OrderMybatisImpl();
+	OrderItemDao orderItemDao=new OrderItemMybatisImpl();
+	ProductDao productDao=new ProductMybatisImpl();
 	@Override
 	public boolean createOrder() {
 		// TODO Auto-generated method stub
@@ -62,6 +68,7 @@ public class OrderServiceImpl implements OrderService {
  			   Product product=cart.getProduct();
  			   int leftStock=product.getStock()-cart.getProductNum();
  			   product.setStock(leftStock);
+ 			   productDao.updateProduct(product);
  		   }
  		   
 		//step7:Çå¿Õ¹ºÎï³µ

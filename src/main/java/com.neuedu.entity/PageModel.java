@@ -1,5 +1,7 @@
 package com.neuedu.entity;
 
+import com.sun.xml.internal.bind.v2.runtime.RuntimeUtil;
+
 import java.io.Serializable;
 import java.util.List;
 
@@ -27,8 +29,13 @@ public class PageModel<T> implements Serializable {
 	public void setTotalPage(int totalPage) {
 		this.totalPage = totalPage;
 	}
-	
-	
-	
 
+
+	@Override
+	public String toString() {
+		return "PageModel{" +
+				"data=" + data +
+				", totalPage=" + totalPage +
+				'}';
+	}
 }

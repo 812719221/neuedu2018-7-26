@@ -8,9 +8,9 @@ public class  Account{
 	public  String  password;
 	public  String  ip;
 	public  String  sex;
-	
-	
-	
+	public String token;
+
+
     public Account(int accountId, String username, String password, String ip, String sex) {
 		super();
 		this.accountId = accountId;
@@ -18,6 +18,25 @@ public class  Account{
 		this.password = password;
 		this.ip = ip;
 		this.sex = sex;
+	}
+
+	public void setToken(String token) {
+		this.token = token;
+	}
+
+	public String getToken() {
+
+		return token;
+	}
+
+	public Account(int accountId, String username, String password, String ip, String sex, String token) {
+		super();
+		this.accountId = accountId;
+		this.username = username;
+		this.password = password;
+		this.ip = ip;
+		this.sex = sex;
+		this.token=token;
 	}
 	/**生成特定的账号对象*/
 	public  Account(){}
@@ -41,7 +60,7 @@ public class  Account{
 	public  void  setUsername(String username){
 		this.username=username;
 	}
-	
+
 	public  String  getPassword(){
 		return password;
 	}
